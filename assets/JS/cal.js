@@ -1,8 +1,6 @@
 const currentDay = $("#currentDay").text(moment().format('MMMM Do YYYY'))
 const currentTime = moment().format('HH')
 
-$("#currentDay").append(currentDay);
-
 $("#btn").on("click", function () {
   if ($("#9am-block").val() !== "") {
     localStorage.setItem("9am", $("#9am-block").val());
