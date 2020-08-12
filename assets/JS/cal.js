@@ -1,6 +1,21 @@
 const currentDay = $("#currentDay").text(moment().format('MMMM Do YYYY'))
 const currentTime = moment().format('HH')
 
+var timeArry = ["9", "10", "11", "12", "13", "14", "15", "16", "17"]
+
+function blockBg (){
+for(var i = 0; i < timeArry.length; i++){
+ if(parseInt(timeArry[i]) < currentTime){
+   $("#" + timeArry[i]).addClass("past")
+ } else if(parseInt(timeArry[i]) > currentTime){
+  $("#" + timeArry[i]).addClass("future")
+ } else if(parseInt(timeArry[i]) === currentTime){
+  $("#" + timeArry[i]).addClass("present")
+ }
+} console.log("hey")
+}
+blockBg();
+
 $("#btn").on("click", function () {
   if ($("#9am-block").val() !== "") {
     localStorage.setItem("9am", $("#9am-block").val());

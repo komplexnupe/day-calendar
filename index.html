@@ -26,111 +26,120 @@
     <p id="currentDay" class="lead"></p>
   </header>
   <div class="container">
-    <!-- Timeblocks go here -->
+    <!-- 9am -->
     <div class="row mb-2">
       <div class="col-2 text-right border border-right-0 border-dark">
         9AM
       </div>
-      <div class="col-8 bg-secondary text-white" data-value="9">
+      <div class="col-8 text-white" id="9">
         <textarea type= text id="9am-block"></textarea>
       </div>
       <div class="col-2 bg-info rounded-right">
-        <button class="btn saveBtn" id="btn"><i class="fa fa-lock" style="color:white" aria-hidden="true"></i></button>
+        <button class="btn saveBtn" id="btn"><i class="fa fa-lock" style="color:blue" aria-hidden="true"></i></button>
       </div>
     </div>
+    <!-- 10am -->
     <div class="row mb-2">
       <div class="col-2 text-right border border-right-0 border-dark">
         10AM
       </div>
-      <div class="col-8 bg-secondary text-white" data-value="10">
+      <div class="col-8 text-white" id="10">
         <textarea id="10am-block"></textarea>
       </div>
       <div class="col-2 bg-info rounded-right">
-        <button class="btn saveBtn" id="btn10"><i class="fa fa-lock" style="color:white"
+        <button class="btn saveBtn" id="btn10"><i class="fa fa-lock" style="color:blue"
             aria-hidden="true"></i></button>
       </div>
     </div>
+    <!-- 11am -->
     <div class="row mb-2">
       <div class="col-2 text-right border border-right-0 border-dark">
         11AM
       </div>
-      <div class="col-8 bg-secondary text-white" data-value="11">
+      <div class="col-8 text-white" id="11">
         <textarea id="11am-block"></textarea>
       </div>
       <div class="col-2 bg-info rounded-right">
-        <button class="btn saveBtn" id="btn11"><i class="fa fa-lock" style="color:white"
+        <button class="btn saveBtn" id="btn11"><i class="fa fa-lock" style="color:blue"
             aria-hidden="true"></i></button>
       </div>
     </div>
+    <!-- 12pm -->
     <div class="row mb-2">
       <div class="col-2 text-right border border-right-0 border-dark">
         12PM
       </div>
-      <div class="col-8 bg-secondary text-white" data-value="12">
+      <div class="col-8 text-white" id="12">
         <textarea id="12pm-block"></textarea>
       </div>
       <div class="col-2 bg-info rounded-right">
-        <button class="btn saveBtn" id="btn12"><i class="fa fa-lock" style="color:white"
+        <button class="btn saveBtn" id="btn12"><i class="fa fa-lock" style="color:blue"
             aria-hidden="true"></i></button>
       </div>
     </div>
+    <!-- 1pm -->
     <div class="row mb-2">
       <div class="col-2 text-right border border-right-0 border-dark">
         1PM
       </div>
-      <div class="col-8 bg-secondary text-white" data-value="13">
+      <div class="col-8 text-white" id="13">
         <textarea id="1pm-block"></textarea>
       </div>
       <div class="col-2 bg-info rounded-right">
-        <button class="btn saveBtn" id="btn1"><i class="fa fa-lock" style="color:white" aria-hidden="true"></i></button>
+        <button class="btn saveBtn" id="btn1"><i class="fa fa-lock" style="color:blue" aria-hidden="true"></i></button>
       </div>
     </div>
+    <!-- 2pm -->
     <div class="row mb-2">
       <div class="col-2 text-right border border-right-0 border-dark">
         2PM
       </div>
-      <div class="col-8 bg-secondary text-white" data-value="14">
+      <div class="col-8 text-white" id="14">
         <textarea id="2pm-block"></textarea>
       </div>
       <div class="col-2 bg-info rounded-right">
-        <button class="btn saveBtn" id="btn2"><i class="fa fa-lock" style="color:white" aria-hidden="true"></i></button>
+        <button class="btn saveBtn" id="btn2"><i class="fa fa-lock" style="color:blue" aria-hidden="true"></i></button>
       </div>
     </div>
+    <!-- 3pm -->
     <div class="row mb-2">
       <div class="col-2 text-right border border-right-0 border-dark">
         3PM
       </div>
-      <div class="col-8 bg-secondary text-white" data-value="15">
+      <div class="col-8 text-white" id="15">
         <textarea type=text id="3pm-block"></textarea>
       </div>
       <div class="col-2 bg-info rounded-right">
-        <button class="btn saveBtn" id="btn3"><i class="fa fa-lock" style="color:white" aria-hidden="true"></i></button>
+        <button class="btn saveBtn" id="btn3"><i class="fa fa-lock" style="color:blue" aria-hidden="true"></i></button>
       </div>
     </div>
+    <!-- 4pm -->
     <div class="row mb-2">
       <div class="col-2 text-right border border-right-0 border-dark">
         4PM
       </div>
-      <div class="col-8 bg-secondary text-white" data-value="16">
+      <div class="col-8 text-white" id="16">
         <textarea id="4pm-block"></textarea>
       </div>
       <div class="col-2 bg-info rounded-right">
-        <button class="btn saveBtn" id="btn4"><i class="fa fa-lock" style="color:white" aria-hidden="true"></i></button>
+        <button class="btn saveBtn" id="btn4"><i class="fa fa-lock" style="color:blue" aria-hidden="true"></i></button>
       </div>
     </div>
+    <!-- 5pm -->
     <div class="row mb-2">
       <div class="col-2 text-right border border-right-0 border-dark">
         5PM
       </div>
-      <div class="col-8 bg-secondary text-white" data-value="17">
+      <div class="col-8 text-white" id="17">
         <textarea id="5pm-block"></textarea>
       </div>
       <div class="col-2 bg-info rounded-right">
-        <button class="btn saveBtn" id="btn5"><i class="fa fa-lock" style="color:white" aria-hidden="true"></i></button>
+        <button class="btn saveBtn" id="btn5"><i class="fa fa-lock" style="color:blue" aria-hidden="true"></i></button>
       </div>
     </div>
 
   </div>
+  <!-- jQuery & Internal JS (moment.js is in the Head) -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="./assets/JS/cal.js"></script>
 </body>
