@@ -9,7 +9,7 @@ for(var i = 0; i < timeArry.length; i++){
    $("#" + timeArry[i]).addClass("past")
  } else if(parseInt(timeArry[i]) > currentTime){
   $("#" + timeArry[i]).addClass("future")
- } else if(parseInt(timeArry[i]) === currentTime){
+ } else if(parseInt(timeArry[i]) == currentTime){
   $("#" + timeArry[i]).addClass("present")
  }
 } console.log("hey")
